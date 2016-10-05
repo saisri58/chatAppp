@@ -9,9 +9,9 @@
 <body>
 	<!-- Navigation bar Common to all pages -->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand " style="color: white">Babblers</a>
+				<a class="navbar-brand " style="color: white">Chatapp</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">

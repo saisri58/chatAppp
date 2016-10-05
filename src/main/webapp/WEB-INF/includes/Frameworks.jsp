@@ -9,6 +9,8 @@
 <!-- BootStrap v3.3.7 -->
 <link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet">
 <link href="<c:url value="/resources/css/bootstrap-theme.css"/>" rel="stylesheet">
+<link href="<c:url value="/resources/css/login.css"/>" rel="stylesheet">
+<link href="<c:url value="/resources/css/registration.css"/>" rel="stylesheet">
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
 
 <!-- JQuery UI v1.12.0 -->
