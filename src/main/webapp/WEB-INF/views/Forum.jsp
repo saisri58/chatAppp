@@ -7,11 +7,11 @@
 		<form role="form" data-ng-submit="submit()"
 			data-ng-controller="ForumController">
 			<h3 align="center">Create Forum</h3>
-			<div class="form-group">
+			<!-- <div class="form-group">
 				<input type="text" class="form-control input-sm"
 					placeholder="Forum Id" data-ng-model="forumid"
 					data-ng-show="forumid" data-ng-disabled="forumid">
-			</div>
+			</div> -->
 			<div class="form-group">
 				<input type="text" class="form-control input-sm"
 					placeholder="Forum Title" data-ng-model="forumName">
@@ -33,10 +33,8 @@
 				<tr>
 					<!-- <th>Forum ID</th> -->
 					<th>Forum Name</th>
-					<th>Forum Description</th>
-					<sec:authorize access="isAuthenticated()">
-						<th>Delete Forum</th>
-					</sec:authorize>
+					<th colspan="2">Forum Description</th>
+					
 				</tr>
 			</thead>
 			<tbody>
@@ -52,13 +50,14 @@
 								<a class="btn btn-primary btn-xs"
 									data-ng-click="editForum(forum.fid)">Edit</a>
 							</sec:authorize>
-							<a href="forum/{{forum.fid}}" class="btn btn-primary btn-xs">View</a>
 						</div>
 					</td>
+					<td width="5%"><a href="forum/{{forum.fid}}" class="btn btn-primary btn-xs">View</a></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+	<input type="text" value="${sessionScope.userid}" style="margin-top: 75px" id="userid" hidden="true" />
 
 	<script
 		src="${pageContext.request.contextPath}/resources/js/AngularControllers/Forum.js"></script>

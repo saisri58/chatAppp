@@ -26,7 +26,7 @@
 	<br>
 	<sec:authorize access="isAuthenticated()">
 		<div class="row">
-			<form role="form" data-ng-submit="Comment()">
+			<form role="form">
 				<div class=" col-sm-11">
 					<input type=text data-ng-model="commentDesc" class="form-control" placeholder="Enter Comment">
 				</div>
@@ -40,16 +40,17 @@
 
 <div data-ng-init="getAllForumComments()">
 		<table class="table table-bordered table-hover">
-			<thead>
+			<%-- <thead>
 				<tr>
-					<!-- <th>Forum ID</th> -->
-					<th>Forum Name</th>
-					<th>Forum Description</th>
+					 <th>Forum Description</th> 
+					<th>Forum Time</th>
+					<!-- <th>Forum Time</th> -->
 					<sec:authorize access="isAuthenticated()">
-						<th>Delete Forum</th>
+					
+					
 					</sec:authorize>
 				</tr>
-			</thead>
+			</thead> --%>
 			<tbody>
 				<tr data-ng-repeat="comment in comments">
 					<td width="80%">{{comment.commentDesc}}</td>
@@ -59,7 +60,6 @@
 							<sec:authorize access="isAuthenticated()">
 								<a class="btn btn-primary btn-xs"
 									data-ng-click="deleteForum(forum.fid)">Delect</a>
-
 								<a class="btn btn-primary btn-xs"
 									data-ng-click="editForum(forum.fid)">Edit</a>
 							</sec:authorize>

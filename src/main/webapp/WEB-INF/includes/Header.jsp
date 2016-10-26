@@ -5,10 +5,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+.navbar-default {
+    background-image: -webkit-linear-gradient(top, #5f1e1e 0%, #9C27B0 100%);
+    background-image: -o-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9C27B0), to(#E91E63));
+    background-image: linear-gradient(to bottom, #FFC107 0%, #FFC107 100%);
+
+
+</style>
 </head>
 <body>
 	<!-- Navigation bar Common to all pages -->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand " style="color: white">Chatapp</a>
